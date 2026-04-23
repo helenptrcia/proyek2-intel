@@ -303,7 +303,7 @@ img {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
     max-width: 100% !important;
-    padding-inline: var(--main-inline-padding) !important;
+    padding-inline: 25px !important;
   }
 
   .carousel-shell > div {
@@ -350,7 +350,7 @@ img {
   main {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
-    padding-inline: var(--main-inline-padding) !important;
+    padding-inline: 25px !important;
   }
 
   .carousel-shell > div {
