@@ -139,3 +139,145 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crayon Shinchan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="font-[Plus_Jakarta_Sans] bg-[#f5f1e8] text-slate-900">
+    <main class="mx-auto min-h-screen max-w-7xl px-4 py-6 md:px-8 lg:px-10">
+      <section class="hero-section grid items-center gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
+        <div class="hero-carousel-wrap order-1 lg:order-none">
+          <div class="carousel-shell overflow-hidden rounded-[2rem] border border-black/10 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.15)]">
+            <div class="relative aspect-[4/3] w-full md:aspect-[16/9] lg:aspect-[5/4]">
+              <div class="carousel-track absolute inset-0">
+                <article class="carousel-slide">
+                  <img src="img/foto_1.jpg" alt="Shinnosuke Nohara" class="carousel-image" />
+                  <div class="carousel-overlay"></div>
+                </article>
+                <article class="carousel-slide">
+                  <img src="img/foto_2.jpg" alt="Shinnosuke Nohara" class="carousel-image" />
+                  <div class="carousel-overlay"></div>
+                </article>
+                <article class="carousel-slide">
+                  <img src="img/foto_3.jpg" alt="Shinnosuke Nohara" class="carousel-image" />
+                  <div class="carousel-overlay"></div>
+                </article>
+              </div>
+
+              <button class="carousel-button left-4" type="button" data-prev aria-label="Sebelumnya"><span aria-hidden="true">‹</span></button>
+              <button class="carousel-button right-4" type="button" data-next aria-label="Berikutnya"><span aria-hidden="true">›</span></button>
+              <div class="carousel-dots" aria-label="Navigasi carousel">
+                <button class="carousel-dot is-active" type="button" data-dot="0" aria-label="Slide 1"></button>
+                <button class="carousel-dot" type="button" data-dot="1" aria-label="Slide 2"></button>
+                <button class="carousel-dot" type="button" data-dot="2" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-copy order-2 lg:order-none lg:pl-4">
+          <h1 class="font-[Sora] text-5xl font-black leading-none tracking-tight text-slate-950 md:text-7xl lg:text-8xl">Crayon <span class="block text-[#1d4ed8]">Shinchan</span></h1>
+          <p class="mt-5 max-w-xl text-sm leading-7 text-slate-700 md:text-base">Crayon Shin-chan mengisahkan keseharian dan petualangan Shinnosuke Nohara bersama keluarga, teman-teman TK Futaba, Shiro, dan warga sekitar di Kasukabe. Ceritanya memadukan komedi kehidupan sehari-hari, momen peristiwa penting keluarga Nohara, hingga sesekali kisah fiksi seperti misteri atau perjalanan waktu.</p>
+        </div>
+      </section>
+
+      <section class="mt-10 md:mt-14">
+        <div class="mb-5 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.35em] text-amber-700">Karakter Utama</p>
+          </div>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2">
+          <article class="group member-card overflow-hidden rounded-[1.75rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/shinnosuke_nohara.jpg" alt="Shinnosuke Nohara" class="member-photo h-72 w-full object-cover" />
+            <div class="p-5">
+              <p class="text-xs font-bold uppercase tracking-[0.35em] text-amber-700">Tokoh Utama</p>
+              <h3 class="mt-2 text-xl font-extrabold text-slate-950">Shinnosuke Nohara</h3>
+            </div>
+          </article>
+
+          <article class="group member-card overflow-hidden rounded-[1.75rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/misae_hiroshi_nohara.jpg" alt="Misae dan Hiroshi Nohara" class="member-photo h-72 w-full object-cover" />
+            <div class="p-5">
+              <p class="text-xs font-bold uppercase tracking-[0.35em] text-amber-700">Orang Tua</p>
+              <h3 class="mt-2 text-xl font-extrabold text-slate-950">Misae & Hiroshi Nohara</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-10 md:mt-14">
+        <div class="mb-5">
+          <p class="text-xs font-bold uppercase tracking-[0.35em] text-amber-700">Karakter Lainnya</p>
+          <h2 class="mt-2 text-2xl font-black text-slate-950 md:text-3xl">Keluarga dan Teman Shinchan</h2>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/himawari_nohara.jpg" alt="Himawari Nohara" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Himawari Nohara</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/shiro.jpg" alt="Shiro" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Shiro</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/ginnosuke_nohara.webp" alt="Ginnosuke Nohara" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Ginnosuke Nohara</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/tsuru_nohara.webp" alt="Tsuru Nohara" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Tsuru Nohara</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/semashi_nohara.webp" alt="Semashi Nohara" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Semashi Nohara</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/yoshiji_koyama.webp" alt="Yoshiji Koyama" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Yoshiji Koyama</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/hisae_koyama.webp" alt="Hisae Koyama" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Hisae Koyama</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/masae_koyama.webp" alt="Masae Koyama" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Masae Koyama</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/musae_koyama.webp" alt="Musae Koyama" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Musae Koyama</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/toru_kazama.avif" alt="Toru Kazama" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Toru Kazama</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/nene_sakurada.avif" alt="Nene Sakurada" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Nene Sakurada</h3></div>
+          </article>
+          <article class="group member-card overflow-hidden rounded-[1.6rem] border border-black/10 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(15,23,42,0.15)]">
+            <img src="img/teman_teman.avif" alt="Masao, Bo, Toru Kazama" class="member-photo h-56 w-full object-cover" />
+            <div class="p-4 text-center"><h3 class="text-lg font-extrabold text-slate-950">Masao, Bo, Toru Kazama</h3></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

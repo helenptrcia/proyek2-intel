@@ -87,7 +87,11 @@ img {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(140deg, rgba(255, 255, 255, 0.24) 0%, transparent 42%);
+  background: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.24) 0%,
+    transparent 42%
+  );
   pointer-events: none;
   z-index: 2;
 }
